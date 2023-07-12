@@ -22,12 +22,63 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Awesome Project</title>
+    <title>Parcel Sandbox</title>
   </head>
   <body>
-    <h1>Hello Kitty!</h1>
-  <script src="index.js"></script>
+    <div class="container">
+      <div class="card shadow mb-5 weather-app">
+        <div class="card-body">
+          <form class="search-form">
+            <div class="row">
+              <div class="col-4">
+              <form>
+                <input
+      type="text" placeholder= "Enter a city..." autocomplete="off" autofocus="on" class="search-text-input" id="city-input" />
+              </div></form>
+              <div class="col-3">
+                <button
+                  type="submit"
+                  value="Search"
+                  class="btn btn-secondary"
+                >Search</button>
+              </div>
+              <div class="col-3"><button class="btn btn-success" id="current-location">Current</button></div>
+            </div>
+               
+          <h1><span id="city"></span></h1>
+          
+          
+          <ul class="list-group list-group-flush">
+            <h3></h3>
+            <li><span id="description"></span></li>
+          </ul>
+                    <div class="row">
+            <div class="col-6">
+              <div class="clearfix">
+                <i class="fa-solid fa-sun sunny weather-icon float-left">
+                                </i>
+                <div class="float-left">
+                  <span class
+                  ="temperature" id="temperature">14</span>
+                  <span class="units" ><a  id="celsius-link">°C</a> <a href="#" id="fahrenheit-link"></a> </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <ul class="list-group list-group-flush">
+                <li><span id="precipitation"></span></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
