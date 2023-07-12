@@ -27,3 +27,14 @@
   bottom: 40px;
   left: 65px;
 }
+.footer {
+  font-size: 9px;
+  color: #141313c0;
+  position: relative;
+  left: 180px;
+  padding: 0 12px;
+}
+
+.link {
+  text-decoration: none;
+}
