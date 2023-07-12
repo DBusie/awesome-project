@@ -1,2 +1,26 @@
-h1 {text-align:center;
-    color: red}
+.weather-app {
+  max-width: 600px;
+  margin: 50px;
+  background-color: #faf6f6;
+}
+.weather-icon {
+  font-size: 55px;
+  color: yellow;
+  position: relative;
+  left: 7px;
+  top: 85px;
+}
+.list-group {
+  list-style-type: none;
+}
+.temperature {
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  left: 65px;
+}
+.units {
+  position: relative;
+  bottom: 40px;
+  left: 65px;
+}
